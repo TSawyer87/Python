@@ -1,0 +1,4 @@
+- A function definition starts with the `def` keyword followed by the function name and parentheses `()`.
+- You can optionally define parameters (inputs) within the parentheses.
+- The function body, containing the code to be executed, is indented (usually with 4 spaces or a tab).
+- The function can optionally return a value using the `return` statement.

@@ -8,4 +8,4 @@ Why DRY Matters:
 
 How to Avoid Repitition in [[Python]]:
 
-[[functions]]: 
+[[10 Python/Functions]]: 

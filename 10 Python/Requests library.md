@@ -1,4 +1,4 @@
-The Requests library in Python is a powerful and user-friendly tool for making HTTP requests to web servers. It simplifies the process of interacting with web APIs, downloading data, and performing various web-related tasks compared to using the raw
+The Requests library in [[Python]] is a powerful and user-friendly tool for making HTTP requests to web servers. It simplifies the process of interacting with web APIs, downloading data, and performing various web-related tasks compared to using the raw
 
 `urllib` module in Python's standard library.
 

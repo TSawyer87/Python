@@ -1,0 +1,1 @@
+Functions are reusable blocks of code that perform specific tasks. They help with modularity, organization, and maintainability.
