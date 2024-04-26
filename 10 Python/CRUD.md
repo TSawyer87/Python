@@ -1,0 +1,1 @@
+(Create, Read, Update, and Delete) to capture all these concepts in a single term.[2](https://www.py4e.com/html3/15-database#fn2)

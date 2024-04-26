@@ -1,0 +1,1 @@
+**High-level**: It abstracts away many low-level details of computer hardware, making it more readable and easier to learn.

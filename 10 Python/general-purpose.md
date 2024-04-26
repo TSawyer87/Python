@@ -1,0 +1,1 @@
+It can be used for a wide variety of tasks.
