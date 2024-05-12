@@ -10,7 +10,7 @@ The `abs()` function in Python is a built-in function used to compute the absolu
 
 Python
 
-```
+```python
 # Positive numbers
 abs(10)        # Output: 10
 abs(3.14)      # Output: 3.14

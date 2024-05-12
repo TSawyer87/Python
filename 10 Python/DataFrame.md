@@ -14,14 +14,18 @@ There are two core objects in pandas: the **DataFrame** and the **Series**.
 A DataFrame is a table. It contains an array of individual _entries_, each of which has a certain _value_. Each entry corresponds to a row (or _record_) and a _column_.
 
 For example, consider the following simple DataFrame:
+```python
+import pandas as pd
 
 pd.DataFrame({'Yes': [50, 21], 'No': [131, 2]})
+```
+`Out:`
+```python
+   Yes   No
+0   50  131
+1   21    2
 
-||Yes|No|
-|---|---|---|
-|0|50|131|
-|1|21|2|
-
+```
 In this example, the "0, No" entry has the value of 131. The "0, Yes" entry has a value of 50, and so on.
 
 DataFrame entries are not limited to integers. For instance, here's a DataFrame whose values are strings:
@@ -38,12 +42,15 @@ We are using the `pd.DataFrame()` constructor to generate these DataFrame object
 The dictionary-list constructor assigns values to the _column labels_, but just uses an ascending count from 0 (0, 1, 2, 3, ...) for the _row labels_. Sometimes this is OK, but oftentimes we will want to assign these labels ourselves.
 
 The list of row labels used in a DataFrame is known as an **Index**. We can assign values to it by using an `index` parameter in our constructor:
-
+```python
 pd.DataFrame({'Bob': ['I liked it.', 'It was awful.'], 
               'Sue': ['Pretty good.', 'Bland.']},
              index=['Product A', 'Product B'])
+```
+`Out:`
+```python
+Bob           Sue
+Product A    I liked it.  Pretty good.
+Product B  It was awful.        Bland.
 
-||Bob|Sue|
-|---|---|---|
-|Product A|I liked it.|Pretty good.|
-|Product B|It was awful.|Bland.|
+```

@@ -1,7 +1,7 @@
 #Database 
 The code to create a database file and a table named `Track` with two columns in the database is as follows:
 
-```
+```python
 import sqlite3
 
 conn = sqlite3.connect('music.sqlite')

@@ -3,7 +3,7 @@
 
 Python
 
-```
+```python
 def function_name(parameters):
   """ (Optional) Docstring explaining the function's purpose
 

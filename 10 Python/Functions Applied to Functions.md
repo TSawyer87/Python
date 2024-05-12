@@ -1,4 +1,5 @@
 Here's something that's powerful, though it can feel very abstract at first. You can supply functions as arguments to other functions. Some example may make this clearer:
+```python
 
 def mult_by_five(x):
     return 5 * x
@@ -19,7 +20,7 @@ print(
 
 5
 25
-
+```
 Functions that operate on other functions are called "higher-order functions." You probably won't write your own for a little while. But there are higher-order functions built into Python that you might find useful to call.
 
 Here's an interesting example using the `max` function.

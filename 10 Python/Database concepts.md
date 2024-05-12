@@ -11,13 +11,13 @@ Attribute  = (Column)
 
 A relational database is made up of tables, rows, and columns. The columns generally have a type such as text, numeric, or date data. When we create a table, we indicate the names and types of the columns:
 
-```
+```python
 CREATE TABLE Track (title TEXT, plays INTEGER)
 ```
 
 To insert a row into a table, we use the SQL `INSERT` command:
 
-```
+```python
 INSERT INTO Track (title, plays) VALUES ('My Way', 15)
 ```
 

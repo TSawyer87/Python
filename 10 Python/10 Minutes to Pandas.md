@@ -26,10 +26,13 @@ See the [Intro to data structures section](https://pandas.pydata.org/pandas-docs
 
 Creating a [`Series`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series "pandas.Series") by passing a list of values, letting pandas create a default [`RangeIndex`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.RangeIndex.html#pandas.RangeIndex "pandas.RangeIndex").
 
+```python
 s = pd.Series([1, 3, 5, np.nan, 6, 8])
 
 s
-Out[4]: 
+```
+`Out:` 
+```
 0    1.0
 1    3.0
 2    5.0
@@ -37,13 +40,17 @@ Out[4]:
 4    6.0
 5    8.0
 dtype: float64
+```
 
-Creating a [`DataFrame`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame "pandas.DataFrame") by passing a NumPy array with a datetime index using [`date_range()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.date_range.html#pandas.date_range "pandas.date_range") and labeled columns:
+- Creating a [`DataFrame`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame "pandas.DataFrame") by passing a NumPy array with a datetime index using [`date_range()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.date_range.html#pandas.date_range "pandas.date_range") and labeled columns:
 
+```python
 dates = pd.date_range("20130101", periods=6)
 
 dates
-Out[6]: 
+```
+`Out:` 
+```python
 DatetimeIndex(['2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04',
                '2013-01-05', '2013-01-06'],
               dtype='datetime64[ns]', freq='D')
@@ -51,7 +58,10 @@ DatetimeIndex(['2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04',
 df = pd.DataFrame(np.random.randn(6, 4), index=dates, columns=list("ABCD"))
 
 df
-Out[8]: 
+```
+`Out[8]:`
+```python
+
                    A         B         C         D
 2013-01-01  0.469112 -0.282863 -1.509059 -1.135632
 2013-01-02  1.212112 -0.173215  0.119209 -1.044236
@@ -59,9 +69,11 @@ Out[8]:
 2013-01-04  0.721555 -0.706771 -1.039575  0.271860
 2013-01-05 -0.424972  0.567020  0.276232 -1.087401
 2013-01-06 -0.673690  0.113648 -1.478427  0.524988
+```
 
-Creating a [`DataFrame`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame "pandas.DataFrame") by passing a dictionary of objects where the keys are the column labels and the values are the column values.
+Creating a [`DataFrame`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame "pandas.DataFrame") by passing a dictionary of objects where the keys are the column labels and the values are the column values.:
 
+```python
 df2 = pd.DataFrame(
 
     {
@@ -89,9 +101,9 @@ Out[10]:
 1  1.0 2013-01-02  1.0  3  train  foo
 2  1.0 2013-01-02  1.0  3   test  foo
 3  1.0 2013-01-02  1.0  3  train  foo
-
+```
 The columns of the resulting [`DataFrame`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame "pandas.DataFrame") have different [dtypes](https://pandas.pydata.org/pandas-docs/stable/user_guide/basics.html#basics-dtypes):
-
+```python
 df2.dtypes
 Out[11]: 
 A          float64
@@ -116,14 +128,16 @@ df2.append             df2.D
 df2.apply              df2.describe
 df2.applymap           df2.diff
 df2.B                  df2.duplicated
+```
 
-As you can see, the columns `A`, `B`, `C`, and `D` are automatically tab completed. `E` and `F` are there as well; the rest of the attributes have been truncated for brevity.
+- As you can see, the columns `A`, `B`, `C`, and `D` are automatically tab completed. `E` and `F` are there as well; the rest of the attributes have been truncated for brevity.
 
 ## Viewing data
 
 See the [Essentially basics functionality section](https://pandas.pydata.org/pandas-docs/stable/user_guide/basics.html#basics).
 
-Use [`DataFrame.head()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head "pandas.DataFrame.head") and [`DataFrame.tail()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html#pandas.DataFrame.tail "pandas.DataFrame.tail") to view the top and bottom rows of the frame respectively:
+- Use [`DataFrame.head()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head "pandas.DataFrame.head") and [`DataFrame.tail()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html#pandas.DataFrame.tail "pandas.DataFrame.tail") to view the top and bottom rows of the frame respectively:
+```python
 
 df.head()
 Out[13]: 
@@ -141,7 +155,8 @@ Out[14]:
 2013-01-05 -0.424972  0.567020  0.276232 -1.087401
 2013-01-06 -0.673690  0.113648 -1.478427  0.524988
 
-Display the [`DataFrame.index`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.index.html#pandas.DataFrame.index "pandas.DataFrame.index") or [`DataFrame.columns`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.columns.html#pandas.DataFrame.columns "pandas.DataFrame.columns"):
+Display the [`DataFrame.index`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.index.html
+#pandas.DataFrame.index "pandas.DataFrame.index") or [`DataFrame.columns`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.columns.html#pandas.DataFrame.columns "pandas.DataFrame.columns"):
 
 df.index
 Out[15]: 
@@ -162,10 +177,14 @@ array([[ 0.4691, -0.2829, -1.5091, -1.1356],
        [ 0.7216, -0.7068, -1.0396,  0.2719],
        [-0.425 ,  0.567 ,  0.2762, -1.0874],
        [-0.6737,  0.1136, -1.4784,  0.525 ]])
-
+```
 Note
 
-**NumPy arrays have one dtype for the entire array while pandas DataFrames have one dtype per column**. When you call [`DataFrame.to_numpy()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_numpy.html#pandas.DataFrame.to_numpy "pandas.DataFrame.to_numpy"), pandas will find the NumPy dtype that can hold _all_ of the dtypes in the DataFrame. If the common data type is `object`, [`DataFrame.to_numpy()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_numpy.html#pandas.DataFrame.to_numpy "pandas.DataFrame.to_numpy") will require copying data.
+- **NumPy arrays have one dtype for the entire array while pandas DataFrames have one dtype per column**. 
+- When you call `DataFrame.to_numpy()`
+- pandas will find the NumPy dtype that can hold _all_ of the dtypes in the DataFrame. 
+- If the common data type is `object`, `DataFrame.to_numpy()`pandas.DataFrame.to_numpy" will require copying data.
+```
 
 df2.dtypes
 Out[18]: 
@@ -184,8 +203,9 @@ array([[1.0, Timestamp('2013-01-02 00:00:00'), 1.0, 3, 'test', 'foo'],
        [1.0, Timestamp('2013-01-02 00:00:00'), 1.0, 3, 'test', 'foo'],
        [1.0, Timestamp('2013-01-02 00:00:00'), 1.0, 3, 'train', 'foo']],
       dtype=object)
-
-[`describe()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html#pandas.DataFrame.describe "pandas.DataFrame.describe") shows a quick statistic summary of your data:
+```
+- `describe()` shows a quick statistic summary of your data:
+```python
 
 df.describe()
 Out[20]: 
@@ -208,9 +228,10 @@ A    0.469112    1.212112   -0.861849    0.721555   -0.424972   -0.673690
 B   -0.282863   -0.173215   -2.104569   -0.706771    0.567020    0.113648
 C   -1.509059    0.119209   -0.494929   -1.039575    0.276232   -1.478427
 D   -1.135632   -1.044236    1.071804    0.271860   -1.087401    0.524988
+```
+- [`DataFrame.sort_index()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_index.html#pandas.DataFrame.sort_index "pandas.DataFrame.sort_index") sorts by an axis:
 
-[`DataFrame.sort_index()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_index.html#pandas.DataFrame.sort_index "pandas.DataFrame.sort_index") sorts by an axis:
-
+```python
 df.sort_index(axis=1, ascending=False)
 Out[22]: 
                    D         C         B         A
@@ -220,9 +241,10 @@ Out[22]:
 2013-01-04  0.271860 -1.039575 -0.706771  0.721555
 2013-01-05 -1.087401  0.276232  0.567020 -0.424972
 2013-01-06  0.524988 -1.478427  0.113648 -0.673690
+```
 
-[`DataFrame.sort_values()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html#pandas.DataFrame.sort_values "pandas.DataFrame.sort_values") sorts by values:
-
+- [`DataFrame.sort_values()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html#pandas.DataFrame.sort_values "pandas.DataFrame.sort_values") sorts by values:
+```python
 df.sort_values(by="B")
 Out[23]: 
                    A         B         C         D
@@ -233,6 +255,8 @@ Out[23]:
 2013-01-06 -0.673690  0.113648 -1.478427  0.524988
 2013-01-05 -0.424972  0.567020  0.276232 -1.087401
 ## Related / Inspiration
+```
+
 [[Selection]]
 ## Footnotes
 [^1]:[https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html]()
