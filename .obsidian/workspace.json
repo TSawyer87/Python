@@ -13,13 +13,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10 Python/Functions Applied to Functions.md",
+                "file": "10 Python/Async Programming.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2568777dc981f426",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Environment Variables Linux.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "794d4692de257b7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Set a temporary environment variable.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6a0d2d1d0ef09055",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Set a permanent environment variable.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8df268db3eb9363a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "How to add directory path to $PATH variable in Linux.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -85,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "10 Python/Functions Applied to Functions.md",
+                "file": "How to add directory path to $PATH variable in Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "10 Python/Functions Applied to Functions.md",
+                "file": "How to add directory path to $PATH variable in Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "10 Python/Functions Applied to Functions.md"
+                "file": "How to add directory path to $PATH variable in Linux.md"
               }
             }
           }
@@ -146,8 +195,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de781a3a5e780783",
+  "active": "8df268db3eb9363a",
   "lastOpenFiles": [
+    "Set a permanent environment variable.md",
+    "How to add directory path to $PATH variable in Linux.md",
+    "Set a temporary environment variable.md",
+    "Environment Variables Linux.md",
+    "10 Python/Async Programming.md",
+    "10 Python/Functions Applied to Functions.md",
     "10 Python/functions.md",
     "10 Python/Functions.md",
     "10 Python/Function Structure.md",
@@ -167,8 +222,6 @@
     "10 Python/Creating a Database.md",
     "10 Python/Benefits of Functions.md",
     "10 Python/Assertions.md",
-    "10 Python/abs() Function.md",
-    "10 Python/SQLite.md",
-    "10 Python/10 Minutes to Pandas.md"
+    "10 Python/abs() Function.md"
   ]
 }
