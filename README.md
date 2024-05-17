@@ -1,0 +1,1 @@
+# Python Obsidian Notes
