@@ -4,7 +4,7 @@
 - Normally, to execute a custom program or script, we need to use its full path, such as `/path/to/script.sh` or just `./script.sh` if we're already in its residing directory.
 - Alternatively, we can execute a lot of commands without specifying paths, like `uptime` or `date`, etc.
 
-The reason we don't need to specify paths for some commands is because of the `SPATH` variable.
+The reason we don't need to specify paths for some commands is because of the `$PATH` variable.
 	This is a variable that can be configured to tell our Linux system where to look for certain programs.
 	That way, when typing `date` into the terminal, Linux checks the $PATH variable to see a list of directories to look for the program.
 

@@ -1,7 +1,7 @@
 #Database 
 The [[SQL INSERT command]] indicates which table we are using and then defines a new row by listing the fields we want to include `(title, plays)` followed by the `VALUES` we want placed in the new row. We specify the values as question marks `(?, ?)` to indicate that the actual values are passed in as a tuple `( 'My Way', 15 )` as the second parameter to the `execute()` call.
 
-```
+```python
 import sqlite3
 
 conn = sqlite3.connect('music.sqlite')
