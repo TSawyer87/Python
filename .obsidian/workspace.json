@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "bbd135afb059200f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "FZF(Fuzzy find).md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "bc8696e4ac9c18c2",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Environment Variables & Shell Variables.md",
+                "file": "FZF(Fuzzy find).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Environment Variables & Shell Variables.md",
+                "file": "FZF(Fuzzy find).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Environment Variables & Shell Variables.md"
+                "file": "FZF(Fuzzy find).md"
               }
             }
           }
@@ -147,10 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0a622264ca4f25d4",
+  "active": "bbd135afb059200f",
   "lastOpenFiles": [
-    "How to add directory path to $PATH variable in Linux.md",
     "Environment Variables & Shell Variables.md",
+    "FZF(Fuzzy find).md",
+    "How to add directory path to $PATH variable in Linux.md",
     "README.md",
     "Set a temporary environment variable.md",
     "10 Python/sqlite3 Exampes.md",
@@ -173,7 +186,6 @@
     "10 Python/Disabling Logging.md",
     "10 Python/Defining functions.md",
     "10 Python/DataFrame.md",
-    "10 Python/Database normalization.md",
-    "10 Python/Database concepts.md"
+    "10 Python/Database normalization.md"
   ]
 }
